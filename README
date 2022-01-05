@@ -1,4 +1,22 @@
-Driver for DHT22/AM2302 Temperature and humidity sensors on 
+Joseph
+======
+
+This version is intended to be used on a Ordroid C2 (rev 2) running armbian.
+The target build system is CMake.
+Support of all other devices and systems is not intended or tested.
+
+Installation:
+mkdir build
+cd build
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release ..
+make -j4
+sudo make install
+
+
+Note
+====
+
+Driver for DHT22/AM2302 Temperature and humidity sensors on
 Raspberry Pi.
 Based on dht11.c: http://ubuntuone.com/6mT9cTREz90BUfvQD1AGNy (license unknown).
 Requires wiringPi library.
